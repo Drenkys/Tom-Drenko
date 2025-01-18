@@ -1,208 +1,262 @@
-/* Base styles */
 body {
-    font-family: "Grenze", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
-    color: #fff;
+    font-family: "Grenze", serif;
+    color: white;
+    background-color: black;
 }
 
-/* Header styles */
-.header {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
+/* Header */
+header {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
+    height: 64px;
+    background-color: black;
+    color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 3px 5px white;
     z-index: 50;
+    box-shadow: 0px 3px 5px white;
 }
 
-.header-text {
-    font-size: 32px;
-    padding: 10px;
+.logo {
+    font-size: 1.875rem;
+    padding: 0.5rem 1.25rem;
 }
 
-.header-nav ul {
+nav {
+    position: absolute;
+    right: 7rem;
+}
+
+nav ul {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.header-nav li {
-    padding: 10px;
-}
-
-/* Main section styles */
-.main {
-    padding-top: 70px;
-}
-
-/* Hero section styles */
-.hero {
-    background-image: url('storage/19659.jpg');
+/* Main content */
+main {
+    min-height: 100vh;
+    background-image: url('19659.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+}
+
+/* Hero section */
+.hero {
     position: relative;
+    min-height: 100vh;
 }
 
-.hero-text {
+.hero-content {
     position: absolute;
-    top: 33%;
-    left: 56px;
-    max-width: 600px;
+    top: 33.333%;
+    left: 14rem;
 }
 
-.hero-text h1 {
-    font-size: 5rem;
-    margin-bottom: 20px;
+.hero-content h1 {
+    font-size: 6rem;
+    margin-bottom: 2rem;
 }
 
-.hero-text p {
+.hero-content p {
     font-size: 1.5rem;
-    width: 66%;
+    width: 66.666%;
 }
 
 .hero-image {
     position: absolute;
-    top: 620px;
-    right: 20px;
     width: 680px;
+    top: 620px;
+    right: 5rem;
 }
 
-/* Services section styles */
+/* Services section */
 .services {
-    padding-top: 50px;
-    text-align: center;
-}
-
-.service-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.service-card {
-    border: 4px solid #ccc;
-    width: 300px;
-    text-align: center;
-}
-
-.service-image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.service-card h3 {
-    font-size: 24px;
-    padding: 15px;
-}
-
-.service-card p {
-    padding: 15px;
-    font-size: 16px;
-}
-
-/* Who is section styles */
-.who-is {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding-top: 50px;
-}
-
-.who-is-image {
     position: relative;
 }
 
-.who-is-image img {
-    width: 400px;
-    height: auto;
+.services h2 {
+    position: absolute;
+    font-size: 2.25rem;
+    left: 14rem;
+    top: -5rem;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    text-align: center;
+    z-index: 10;
+}
+
+.service-card {
+    width: 24rem;
+    border: 4px solid #9ca3af;
+}
+
+.service-card img {
+    border-bottom: 4px solid #9ca3af;
+    min-height: 16rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.service-card h2 {
+    font-size: 1.875rem;
+    padding: 0.5rem;
+    position: static;
+}
+
+.service-card p {
+    padding: 0.5rem;
+}
+
+/* About section */
+.about {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-top: 9rem;
+}
+
+.about-images {
+    position: relative;
+}
+
+.mirror {
+    width: 24rem;
 }
 
 .hood {
     position: absolute;
-    top: 12px;
-    width: 320px;
+    top: 3rem;
+    width: 20rem;
 }
 
-.who-is-text {
-    max-width: 400px;
+.about-content {
+    max-width: 20rem;
+    margin-top: 6rem;
+}
+
+.about-content h2 {
     text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
 }
 
-.who-is-text h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+.about-content p {
+    font-size: 1.25rem;
 }
 
-.who-is-text p {
-    font-size: 18px;
+/* Parallax section */
+.parallax {
+    margin-top: 5rem;
+    height: 13rem;
+    background-image: url('rb_37387.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px -1px 4px white, 0px 1px 4px white;
 }
 
-/* Contact section styles */
+/* Contact section */
 .contact {
-    padding-top: 50px;
-    background-color: #1a1a1a;
-    text-align: center;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
 }
 
-.contact h3 {
-    font-size: 32px;
-    margin-bottom: 20px;
+.contact-info {
+    width: 33.333%;
+    min-width: 20rem;
 }
 
-.contact form input[type="text"] {
+.contact-info h3 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.contact-info p {
+    font-size: 1.25rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+}
+
+input[type="text"] {
     width: 300px;
-    padding: 10px;
-    font-size: 18px;
-    margin: 10px;
+    padding: 2px;
+    font-weight: bold;
+    background: none;
     border: none;
     border-bottom: 2px solid white;
-    background-color: transparent;
-    color: white;
-}
-
-.contact form input[type="text"]:hover {
-    border-bottom: 2px solid orange;
-}
-
-.contact form input[type="submit"] {
     font-size: 24px;
+    color: white;
+    transition: border-bottom-color 0.5s ease;
+}
+
+input[type="text"]:hover {
+    border-bottom: 2px solid orange;
+    color: white;
+}
+
+input[type="submit"] {
+    font-size: 1.5rem;
     font-weight: bold;
-    padding: 10px;
     border: 2px solid white;
-    width: 150px;
-    margin-top: 20px;
+    background: none;
+    color: white;
+    width: 10rem;
+    margin-top: 1.25rem;
+    cursor: pointer;
 }
 
-/* Connect section styles */
-.connect {
+/* Social section */
+.social {
+    margin-top: 5rem;
+    padding-bottom: 1.25rem;
     text-align: center;
-    margin-top: 40px;
 }
 
-.social-icon {
-    width: 60px;
-    margin: 0 10px;
+.social h3 {
+    display: inline-block;
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-right: 1.25rem;
 }
 
-/* Footer styles */
-.footer {
-    background-color: #000;
+.social-icons {
+    display: inline-flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 6rem;
+}
+
+/* Footer */
+footer {
+    background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    font-size: 1.25rem;
     box-shadow: 0px -2px 5px white;
+}
+
+footer span {
+    vertical-align: middle;
+    margin-right: 0.5rem;
 }
