@@ -40,7 +40,7 @@ nav ul {
 /* Main content */
 main {
     min-height: 100vh;
-    background-image: url('19659.jpg');
+    background: url('19659.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
