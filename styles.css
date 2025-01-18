@@ -1,0 +1,208 @@
+/* Base styles */
+body {
+    font-family: "Grenze", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Header styles */
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 5px white;
+    z-index: 50;
+}
+
+.header-text {
+    font-size: 32px;
+    padding: 10px;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.header-nav li {
+    padding: 10px;
+}
+
+/* Main section styles */
+.main {
+    padding-top: 70px;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('storage/19659.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 33%;
+    left: 56px;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    width: 66%;
+}
+
+.hero-image {
+    position: absolute;
+    top: 620px;
+    right: 20px;
+    width: 680px;
+}
+
+/* Services section styles */
+.services {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    border: 4px solid #ccc;
+    width: 300px;
+    text-align: center;
+}
+
+.service-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    padding: 15px;
+}
+
+.service-card p {
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* Who is section styles */
+.who-is {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+.who-is-image {
+    position: relative;
+}
+
+.who-is-image img {
+    width: 400px;
+    height: auto;
+}
+
+.hood {
+    position: absolute;
+    top: 12px;
+    width: 320px;
+}
+
+.who-is-text {
+    max-width: 400px;
+    text-align: center;
+}
+
+.who-is-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.who-is-text p {
+    font-size: 18px;
+}
+
+/* Contact section styles */
+.contact {
+    padding-top: 50px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.contact h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact form input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.contact form input[type="text"]:hover {
+    border-bottom: 2px solid orange;
+}
+
+.contact form input[type="submit"] {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid white;
+    width: 150px;
+    margin-top: 20px;
+}
+
+/* Connect section styles */
+.connect {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social-icon {
+    width: 60px;
+    margin: 0 10px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px -2px 5px white;
+}
