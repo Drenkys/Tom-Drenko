@@ -102,7 +102,8 @@ main {
 
 .service-card img {
     border-bottom: 4px solid #9ca3af;
-    min-height: 16rem;
+    max-height: 16rem;
+    max-width: 383.8px;
     object-fit: cover;
 }
 
@@ -241,6 +242,8 @@ input[type="submit"] {
     display: inline-flex;
     gap: 1.25rem;
     align-items: center;
+    position: relative;
+    top: 35px;
 }
 
 .social-icons img {
