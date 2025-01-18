@@ -103,7 +103,6 @@ main {
 .service-card img {
     border-bottom: 4px solid #9ca3af;
     min-height: 16rem;
-    width: 100%;
     object-fit: cover;
 }
 
@@ -130,13 +129,13 @@ main {
 }
 
 .mirror {
-    width: 24rem;
+    width: 384px;  /* 96 * 4 = 384px (w-96 from Tailwind) */
 }
 
 .hood {
     position: absolute;
     top: 3rem;
-    width: 20rem;
+    width: 320px;  /* 80 * 4 = 320px (w-80 from Tailwind) */
 }
 
 .about-content {
@@ -244,7 +243,7 @@ input[type="submit"] {
 }
 
 .social-icons img {
-    width: 6rem;
+    width: 96px;  /* 24 * 4 = 96px (w-24 from Tailwind) */
 }
 
 /* Footer */
