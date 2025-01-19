@@ -25,11 +25,11 @@
                     <h1>Tomáš Drenko</h1>
                     <p>Web Developer, Enthusiast, Gamer, and Father</p>
                 </div>
-                <img class="hero-image" src="storage/file.png" alt="">
             </div>
             
             <div class="services">
                 <h2>My services</h2>
+                <img class="hero-image" src="storage/file.png" alt="">
                 <div class="services-grid">
                     <div class="service-card">
                         <img src="storage/110094.jpg" alt="">
@@ -71,9 +71,10 @@
                     <h3>Contact</h3>
                     <p>If you have any questions or wish to discuss a project, feel free to get in touch. I'm always excited to connect and explore new opportunities. Fill out the form below, and I'll get back to you as soon as possible.</p>
                 </div>
-                <form action="" method="POST">
-                    <input type="text" placeholder="Name" required>
-                    <input type="text" placeholder="Contact" required>
+                <form action="https://formspree.io/f/manngvky" method="POST">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea name="message">Write a message</textarea>
                     <input type="submit" value="Submit">
                 </form>
             </section>

@@ -71,7 +71,7 @@ main {
 .hero-image {
     position: absolute;
     width: 680px;
-    top: 620px;
+    top: -310px;
     right: 5rem;
 }
 
@@ -93,7 +93,8 @@ main {
     flex-wrap: wrap;
     gap: 3rem;
     text-align: center;
-    z-index: 10;
+    z-index: 30;
+    position: relative;
 }
 
 .service-card {
@@ -121,6 +122,7 @@ main {
 
 .service-card p {
     padding: 0.5rem;
+    font-size: 20px;
 }
 
 /* About section */
@@ -204,7 +206,7 @@ main {
     min-width: 20rem;
 }
 
-input[type="text"] {
+input[type="text"], input[type="email"] {
     width: 300px;
     padding: 2px;
     font-weight: bold;
@@ -214,9 +216,10 @@ input[type="text"] {
     font-size: 24px;
     color: white;
     transition: border-bottom-color 0.5s ease;
+    margin-bottom: 15px;
 }
 
-input[type="text"]:hover {
+input[type="text"]:hover, input[type="text"]:hover{
     border-bottom: 2px solid orange;
     color: white;
 }
@@ -231,9 +234,20 @@ input[type="submit"] {
     margin-top: 1.25rem;
     cursor: pointer;
 }
+
 input[type="submit"]:hover{
     border: 2px solid orange;
 }
+
+textarea{
+    resize: none;
+    height: 50px;
+    background: none;
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
 /* Social section */
 .social {
     margin-top: 5rem;
