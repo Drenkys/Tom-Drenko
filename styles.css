@@ -161,7 +161,8 @@ main {
 }
 
 .about-content p {
-    font-size: 1.25rem;
+    font-size: 18px;
+    text-align: center;
 }
 
 /* Parallax section */
@@ -197,7 +198,7 @@ main {
 }
 
 .contact-info p {
-    font-size: 1.25rem;
+    font-size: 18px;
 }
 
 .contact form {
