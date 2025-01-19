@@ -5,6 +5,7 @@
         <meta name="viewport" content="min-width=999">
         <title>Tomáš Drenko</title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -14,47 +15,47 @@
             <div class="logo">Tomáš Drenko</div>
             <nav>
                 <ul>
-                    <li>About</li>
-                    <li>Services</li>
+                    <li><a href="#section1">Services</a></li>
+                    <li><a href="#section2">About</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="hero">
+            <div data-aos="fade-up" data-aos-duration="1000" class="hero">
                 <div class="hero-content">
                     <h1>Tomáš Drenko</h1>
                     <p>Web Developer, Enthusiast, Gamer, and Father</p>
                 </div>
             </div>
             
-            <div class="services">
+            <div id="section1" class="services">
                 <h2>My services</h2>
-                <img class="hero-image" src="storage/file.png" alt="">
+                <img class="hero-image" src="storage/file.webp" alt="">
                 <div class="services-grid">
-                    <div class="service-card">
-                        <img src="storage/110094.jpg" alt="">
+                    <div data-aos="fade-up" data-aos-duration="1000" class="service-card">
+                        <img src="storage/110094.webp" alt="">
                         <h2>Web development</h2>
                         <p>Transforming your ideas into reality through intuitive design and seamless functionality. Together, we'll create something truly extraordinary.</p>
                     </div>
-                    <div class="service-card">
-                        <img src="storage/2148419209.jpg" alt="">
+                    <div data-aos="fade-up" data-aos-duration="1000" class="service-card">
+                        <img src="storage/2148419209.webp" alt="">
                         <h2>Hardware</h2>
                         <p>Working with top-level hardware to ensure optimal performance and long-lasting durability of your devices.</p>
                     </div>
-                    <div class="service-card">
-                        <img src="storage/121526.jpg" alt="">
+                    <div data-aos="fade-up" data-aos-duration="1000" class="service-card">
+                        <img src="storage/121526.webp" alt="">
                         <h2>Software</h2>
                         <p>I enjoy keeping up with the latest trends and creating innovative software solutions that boost efficiency and meet your expectations.</p>
                     </div>
                 </div>
             </div>
 
-            <section class="about">
-                <div class="about-images">
-                    <img class="mirror" src="storage/mirror.png" alt="">
-                    <img class="hood" src="storage/hood.png" alt="">
+            <section id="section2" class="about">
+                <div data-aos="fade-up" data-aos-duration="1000" class="about-images">
+                    <img class="mirror" src="storage/mirror.webp" alt="">
+                    <img class="hood" src="storage/hood.webp" alt="">
                 </div>
-                <div class="about-content">
+                <div data-aos="fade-up" data-aos-duration="1000" class="about-content">
                     <h2>Who is Tom?</h2>
                     <p>With many years of experience in web development and hardware, I offer my services to clients who demand the best.
                         <br> <br>
@@ -66,7 +67,7 @@
 
             <section class="parallax" id="code"></section>
 
-            <section class="contact">
+            <section data-aos="fade-up" data-aos-duration="1000" class="contact">
                 <div class="contact-info">
                     <h3>Contact</h3>
                     <p>If you have any questions or wish to discuss a project, feel free to get in touch. I'm always excited to connect and explore new opportunities. Fill out the form below, and I'll get back to you as soon as possible.</p>
@@ -79,17 +80,18 @@
                 </form>
             </section>
 
-            <section class="social">
+            <section data-aos="fade-up" data-aos-duration="1000" class="social">
                 <h3>Connect with Me</h3>
                 <div class="social-icons">
-                    <img src="storage/fb.png" alt="Facebook">
-                    <img src="storage/ig.png" alt="Instagram">
-                    <img src="storage/discord.png" alt="Discord">
+                    <img src="storage/fb.webp" alt="Facebook">
+                    <img src="storage/ig.webp" alt="Instagram">
+                    <img src="storage/discord.webp" alt="Discord">
                 </div>
             </section>
         </main>
         <footer>
             <p><span>&copy;</span> Tomáš Drenko</p>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> <script> AOS.init(); </script>
     </body>
 </html>
